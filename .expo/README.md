@@ -1,15 +1,56 @@
-> Why do I have a folder named ".expo" in my project?
+# Eco Urbano
 
-The ".expo" folder is created when an Expo project is started using "expo start" command.
+Aplicação mobile desenvolvida para um projeto acadêmico, com foco no registro e acompanhamento de ocorrências ambientais em áreas urbanas.
 
-> What do the files contain?
+## Tecnologias
 
-- "devices.json": contains information about devices that have recently opened this project. This is used to populate the "Development sessions" list in your development builds.
-- "packager-info.json": contains port numbers and process PIDs that are used to serve the application to the mobile device/simulator.
-- "settings.json": contains the server configuration that is used to serve the application manifest.
+- React Native
+- Expo
+- TypeScript
+- Supabase
+- PostgreSQL
+- Open-Meteo
+- Serviço de mapas
+- Git e GitHub
 
-> Should I commit the ".expo" folder?
+O desenvolvimento foi iniciado no Kiro e posteriormente migrado para o Visual Studio Code, utilizando o Ollama como apoio durante a programação.
 
-No, you should not share the ".expo" folder. It does not contain any information that is relevant for other developers working on the project, it is specific to your machine.
+## Funcionalidades
 
-Upon project creation, the ".expo" folder is already added to your ".gitignore" file.
+- Cadastro e visualização de ocorrências ambientais
+- Localização das ocorrências
+- Visualização em mapas
+- Consulta de informações meteorológicas
+- Informações sobre qualidade do ar
+- Autenticação de usuários
+- Armazenamento de dados no Supabase
+
+## Como executar
+
+É necessário ter o **Node.js** e o **Expo** instalados.
+
+```bash
+npm install
+```
+
+Depois, execute:
+
+```bash
+npx expo start
+```
+
+A aplicação pode ser testada utilizando o Expo Go, emulador Android ou ambiente iOS compatível.
+
+## Configuração
+
+O projeto utiliza o Supabase e serviços externos. As chaves e configurações necessárias devem ser adicionadas por meio de variáveis de ambiente.
+
+Informações privadas, como senhas e chaves de acesso, não devem ser enviadas para o GitHub.
+
+## Testes
+
+A aplicação foi executada e testada em ambientes Android e iOS.
+
+## Projeto acadêmico
+
+Projeto desenvolvido para aplicar conhecimentos de desenvolvimento mobile, banco de dados, APIs, localização e integração de serviços.
